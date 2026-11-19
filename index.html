@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mick's — Pizzería desde 1954</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Yesteryear&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="#top">Mick's</a>
+    <nav class="links" id="navLinks">
+      <a href="#menu">Menú</a>
+      <a href="#historia">Historia</a>
+      <a href="#reservas">Reservas</a>
+      <a href="#horario">Horario</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menú">
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <svg class="badge" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sello de Mick's Pizzería">
+    <circle cx="100" cy="100" r="94" fill="none" stroke="#251f19" stroke-width="2"/>
+    <circle cx="100" cy="100" r="86" fill="none" stroke="#251f19" stroke-width="1" stroke-dasharray="1 6"/>
+    <path id="arcTop" d="M 30 100 A 70 70 0 0 1 170 100" fill="none"/>
+    <path id="arcBot" d="M 42 138 A 70 70 0 0 0 158 138" fill="none"/>
+    <text font-family="Fraunces, serif" font-size="20" font-weight="700" letter-spacing="3" fill="#251f19">
+      <textPath href="#arcTop" startOffset="50%" text-anchor="middle">MICK'S</textPath>
+    </text>
+    <text font-family="Courier Prime, monospace" font-size="9" letter-spacing="3" fill="#a32e1f">
+      <textPath href="#arcBot" startOffset="50%" text-anchor="middle">PIZZERÍA · DESDE 1954</textPath>
+    </text>
+    <g transform="translate(100,100)">
+      <path d="M -22 8 L 0 -26 L 22 8 A 24 24 0 0 1 -22 8 Z" fill="none" stroke="#a32e1f" stroke-width="2"/>
+      <circle cx="-4" cy="-2" r="2.6" fill="#4b5027"/>
+      <circle cx="7" cy="4" r="2.6" fill="#4b5027"/>
+      <circle cx="0" cy="-10" r="2.6" fill="#4b5027"/>
+    </g>
+  </svg>
+
+  <span class="eyebrow">Horno de leña · Receta de familia</span>
+  <h1>Pizza como<br>en 1954</h1>
+  <p class="tagline">Masa de fermentación lenta, tomate en lata y un horno que no se ha apagado en tres generaciones.</p>
+  <div class="hero-ctas">
+    <a class="cta" href="#menu">Ver el menú</a>
+    <a class="cta ghost" href="#reservas">Reservar mesa</a>
+  </div>
+  <span class="scroll-cue" aria-hidden="true"></span>
+</section>
+
+<div class="ribbon" role="presentation"></div>
+
+<section class="stats">
+  <div class="wrap">
+    <div class="stats-row reveal">
+      <div class="stat">
+        <div class="num">70</div>
+        <div class="lbl">Años de horno<br>encendido</div>
+      </div>
+      <div class="stat">
+        <div class="num">48h</div>
+        <div class="lbl">Fermentación<br>de la masa</div>
+      </div>
+      <div class="stat">
+        <div class="num">3</div>
+        <div class="lbl">Generaciones<br>en la cocina</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu-section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Lo que servimos</span>
+      <h2>El Menú</h2>
+    </div>
+
+    <div class="menu-grid">
+      <div class="menu-cat reveal">
+        <h3>Rojas</h3>
+        <span class="cat-sub">Base de tomate San Marzano</span>
+
+        <div class="menu-item"><span class="name">Margherita</span><span class="leader"></span><span class="price">$ 9</span></div>
+        <span class="menu-sub">Mozzarella fresca, albahaca, aceite de oliva.</span>
+
+        <div class="menu-item"><span class="name">Pepperoni Clásica</span><span class="leader"></span><span class="price">$ 11</span></div>
+        <span class="menu-sub">Pepperoni curado, orégano seco, mozzarella.</span>
+
+        <div class="menu-item"><span class="name">Diavola</span><span class="leader"></span><span class="price">$ 12</span></div>
+        <span class="menu-sub">Salame picante, ají calabrés, miel de abeja.</span>
+
+        <div class="menu-item"><span class="name">Del Barrio</span><span class="leader"></span><span class="price">$ 13</span></div>
+        <span class="menu-sub">Salchicha italiana, pimientos asados, cebolla.</span>
+      </div>
+
+      <div class="menu-cat reveal">
+        <h3>Blancas</h3>
+        <span class="cat-sub">Sin salsa de tomate</span>
+
+        <div class="menu-item"><span class="name">Funghi e Tartufo</span><span class="leader"></span><span class="price">$ 14</span></div>
+        <span class="menu-sub">Crema de hongos, aceite de trufa, parmesano.</span>
+
+        <div class="menu-item"><span class="name">Quattro Formaggi</span><span class="leader"></span><span class="price">$ 13</span></div>
+        <span class="menu-sub">Mozzarella, gorgonzola, provolone, grana.</span>
+
+        <div class="menu-item"><span class="name">Vegetariana</span><span class="leader"></span><span class="price">$ 11</span></div>
+        <span class="menu-sub">Zapallito, berenjena, tomate seco, ricota.</span>
+
+        <div class="menu-item"><span class="name">Nonna's Pie</span><span class="leader"></span><span class="price">$ 12</span></div>
+        <span class="menu-sub">Ricota, limón, espinaca, nuez moscada.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="historia">
+  <div class="wrap historia">
+    <div class="reveal">
+      <span class="eyebrow">Nuestra historia</span>
+      <h2 style="margin-top:10px; margin-bottom:22px;">Tres generaciones,<br>un mismo horno</h2>
+      <p><span class="drop">M</span>ick abrió las puertas de esta pizzería en 1954, en una esquina de barrio donde el pan y el tomate se compraban al fiado. El horno de ladrillo que instaló ese primer invierno sigue encendido hoy, alimentado con la misma leña de roble.</p>
+      <p>Su hija aprendió a estirar la masa antes de aprender a leer. Hoy es su nieto quien abre la cortina cada mañana, con la receta escrita a mano que nunca salió de la familia.</p>
+      <p>No hay atajos: la masa fermenta 48 horas, el tomate se pela a mano y la mozzarella se corta al momento. Todo lo demás es, simplemente, tiempo.</p>
+    </div>
+    <svg class="oven-art" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración de horno de leña">
+      <circle cx="160" cy="160" r="150" fill="none" stroke="#ad8a4e" stroke-width="1" stroke-dasharray="2 7"/>
+      <path d="M70 220 h180 v20 a10 10 0 0 1 -10 10 H80 a10 10 0 0 1 -10 -10 Z" fill="none" stroke="#251f19" stroke-width="2.5"/>
+      <path d="M85 220 C 85 130 235 130 235 220" fill="none" stroke="#251f19" stroke-width="2.5"/>
+      <ellipse cx="160" cy="220" rx="75" ry="14" fill="none" stroke="#251f19" stroke-width="2"/>
+      <rect x="120" y="188" width="80" height="32" rx="4" fill="none" stroke="#a32e1f" stroke-width="2.5"/>
+      <path d="M150 150 q6 -20 -4 -30 q14 4 14 22 q10 -10 4 -24 q16 10 10 32 q-4 12 -14 12 q-14 0 -10 -12z" fill="#a32e1f" opacity="0.85"/>
+      <path d="M60 260 q100 -18 200 0" fill="none" stroke="#4b5027" stroke-width="2"/>
+    </svg>
+  </div>
+</section>
+
+<section id="reservas" class="reservas">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Mesa para dos, o para diez</span>
+      <h2>Reservá tu lugar</h2>
+    </div>
+
+    <div class="reserva-box reveal">
+      <form class="reserva-form" id="reservaForm" novalidate>
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+        </div>
+        <div class="field">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" required placeholder="099 123 456">
+        </div>
+        <div class="field">
+          <label for="fecha">Fecha</label>
+          <input type="date" id="fecha" name="fecha" required>
+        </div>
+        <div class="field">
+          <label for="hora">Hora</label>
+          <select id="hora" name="hora" required>
+            <option value="" disabled selected>Elegí un horario</option>
+            <option>19:00</option>
+            <option>19:30</option>
+            <option>20:00</option>
+            <option>20:30</option>
+            <option>21:00</option>
+            <option>21:30</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label for="personas">Comensales</label>
+          <input type="number" id="personas" name="personas" min="1" max="12" value="2" required>
+        </div>
+        <div class="reserva-submit">
+          <button type="submit" class="cta">Confirmar reserva</button>
+        </div>
+      </form>
+
+      <div class="confirm" id="confirmBox">
+        <div class="code" id="confirmCode">MK-0000</div>
+        <h3>Reserva registrada</h3>
+        <p id="confirmText">Te esperamos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="horario" style="background:var(--paper); border-top:1px solid var(--line);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Los datos</span>
+      <h2>Horario y Ubicación</h2>
+    </div>
+    <div class="ticket-wrap reveal">
+      <div class="ticket">
+        <span class="perf top"></span>
+        <h3>Mesa para dos</h3>
+        <span class="eyebrow">Válido todos los días</span>
+        <div class="hours-table">
+          <div class="hours-row"><span>Martes — Jueves</span><span>18:00 – 23:00</span></div>
+          <div class="hours-row"><span>Viernes — Sábado</span><span>18:00 – 00:30</span></div>
+          <div class="hours-row"><span>Domingo</span><span>13:00 – 22:00</span></div>
+          <div class="hours-row"><span>Lunes</span><span>Cerrado</span></div>
+        </div>
+        <span class="perf bottom"></span>
+        <p class="address">Av. de los Olmos 452, esquina Belgrano<br>Reservas al mostrador o por este sitio</p>
+        <p class="contact-line">(011) 4555-0199 · hola@mickspizzeria.com</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="foot-col">
+        <a class="logo" href="#top">Mick's</a>
+        <p class="foot-tag">Horno de leña, receta de familia, desde 1954.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2c2.7 0 3.05.01 4.12.06 1.07.05 1.8.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.89 1.11 1.15 1.77.25.63.42 1.36.47 2.43.05 1.07.06 1.42.06 4.12s-.01 3.05-.06 4.12c-.05 1.07-.22 1.8-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.63.25-1.36.42-2.43.47-1.07.05-1.42.06-4.12.06s-3.05-.01-4.12-.06c-1.07-.05-1.8-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.63-.42-1.36-.47-2.43C2.01 15.05 2 14.7 2 12s.01-3.05.06-4.12c.05-1.07.22-1.8.47-2.43.26-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.45 2.53c.63-.25 1.36-.42 2.43-.47C8.95 2.01 9.3 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-8.4a1.17 1.17 0 1 1-2.34 0 1.17 1.17 0 0 1 2.34 0z"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M13.5 22v-8.5h2.9l.4-3.4h-3.3V8c0-1 .3-1.6 1.7-1.6h1.8V3.3C16.7 3.2 15.6 3 14.4 3c-2.6 0-4.4 1.6-4.4 4.5v2.6H7v3.4h3v8.5h3.5z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Contacto</h4>
+        <a href="tel:+59824550199">(011) 4555-0199</a>
+        <a href="mailto:hola@mickspizzeria.com">hola@mickspizzeria.com</a>
+        <p>Av. de los Olmos 452<br>esquina Belgrano</p>
+      </div>
+      <div class="foot-col">
+        <h4>Horario</h4>
+        <p>Mar — Jue: 18:00 – 23:00</p>
+        <p>Vie — Sáb: 18:00 – 00:30</p>
+        <p>Dom: 13:00 – 22:00</p>
+        <p>Lun: Cerrado</p>
+      </div>
+    </div>
+    <p class="fine">Mick's Pizzería · Desde 1954 · Hecha a mano, siempre.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

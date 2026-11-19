@@ -1,0 +1,27 @@
+﻿# Editores
+.vscode/
+.idea/
+
+# Sistemas operativos
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Archivos temporales y logs
+*.log
+*.tmp
+*.temp
+
+# Variables de entorno y datos sensibles
+.env
+.env.*
+!.env.example
+
+# Configuración local de Netlify
+.netlify/
+
+# Certificados y claves privadas
+*.pem
+*.p12
+*.pfx
+*.key
